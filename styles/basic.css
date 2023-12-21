@@ -1,0 +1,17 @@
+/* Общие стили */
+/* background-color: linear-gradient(253deg, #07313A 24.7%, #156D81 132.58%); */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: var(--bg-main);
+}
+
+.wrapper {
+    width: 68%;
+    margin: 0 auto;
+
+}
