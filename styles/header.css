@@ -57,7 +57,7 @@ header {
 }
 
 .menu-list {
-    top: 0;
+    top: 95px;
     left: 0;
     position: absolute;
     display: grid;
@@ -219,5 +219,20 @@ header {
 @media (max-width: 576px) {
     .header {
         flex-wrap: wrap;
+    }
+}
+@media (max-width: 531px){
+.menu-list{
+    top: 127px;
+}
+}
+@media (max-width: 450px){
+    .menu-list{
+        top: 132px;
+    }
+    }
+@media (max-width: 299px){
+    .menu-list{
+        top: 160px;
     }
 }
