@@ -1,6 +1,6 @@
 /* Бургер меню */
 header {
-    background-color: #94de8b;
+    background-color: #113377;
 }
 
 .burger-checkbox {
@@ -29,12 +29,12 @@ header {
     width: 100%;
     height: 4px;
     border-radius: 10px;
-    background: #000;
+    background: #ffffff;
 }
 
 .burger::before {
     top: 0;
-    box-shadow: 0 11px 0 #000;
+    box-shadow: 0 11px 0 #ffffff;
     transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
 }
 
@@ -46,7 +46,7 @@ header {
 .burger-checkbox:checked+.burger::before {
     top: 11px;
     transform: rotate(45deg);
-    box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 6px 0 rgba(255, 255, 255, 0);
     transition: box-shadow .15s, top .3s, transform .3s .15s;
 }
 
@@ -64,7 +64,7 @@ header {
     gap: 12px;
     padding: 42px 0;
     margin: 0;
-    background: rgb(140, 136, 128);
+    background: #225588;
     list-style-type: none;
     transform: translateX(-100%);
     transition: .3s;
@@ -122,6 +122,14 @@ header {
     gap: 10px;
     transition: .5s;
     position: relative;
+    color: var(--bg-main);
+    font-size: calc(12px + 8 * (100vw / 1600));
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: calc(12px + (8 + 8 * 0.7) * ((100vw - 320px) / 1600));
+    }
 }
 
 .header__phone::after {
@@ -131,7 +139,7 @@ header {
     left: 0;
     right: 100%;
     bottom: 10px;
-    background-color: var(--bg-color-black);
+    background-color: var(--bg-main);
     transition: .22s;
 }
 
@@ -161,7 +169,7 @@ header {
     left: 0;
     right: 100%;
     bottom: -5px;
-    background-color: var(--bg-color-black);
+    background-color: var(--bg-main);
     transition: .22s;
 
 }
@@ -197,19 +205,18 @@ header {
         margin: 0 0 0 8px;
     }
 
-    .phone {
-        font-size: 12px;
-    }
-
     .social__item,
     .header__phone span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 32px;
         height: 32px;
     }
 
     .social__item img,
     .header__phone img {
-        width: 70%;
+        width: 100%;
         text-align: center;
     }
 
@@ -221,18 +228,21 @@ header {
         flex-wrap: wrap;
     }
 }
-@media (max-width: 531px){
-.menu-list{
-    top: 127px;
+
+@media (max-width: 531px) {
+    .menu-list {
+        top: 127px;
+    }
 }
-}
-@media (max-width: 450px){
-    .menu-list{
+
+@media (max-width: 450px) {
+    .menu-list {
         top: 132px;
     }
-    }
-@media (max-width: 299px){
-    .menu-list{
+}
+
+@media (max-width: 299px) {
+    .menu-list {
         top: 160px;
     }
 }

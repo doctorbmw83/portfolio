@@ -1,0 +1,69 @@
+.hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100vh;
+    background-image: url(/myProject/img/webp/hero-background4.webp);
+    background-size: cover;
+}
+
+
+.hero-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-flex__text {
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+}
+
+.hero-flex__text h1 {
+    text-align: center;
+    font-size: calc(22px + 18 * (100vw / 1600));
+    color: #113377;
+    -webkit-text-stroke: 2px #000;
+}
+
+.hero-flex__text h2 {
+    text-align: center;
+    color: #113377;
+    font-size: calc(16px + 16 * (100vw / 1600));
+}
+
+.hero-flex__text p {
+    text-align: center;
+    color: #223355;
+    font-size: calc(12px + 4 * (100vw / 1600));
+}
+
+/* .hero-flex__img {
+    flex: 0 1 50%;
+
+}
+
+.hero-flex__img img {
+    width: 100%;
+} */
+
+@media (max-width: 767px) {
+    .hero-flex__text h1 {
+        font-size: calc(22px + (18 + 18 * 0.7) * ((100vw - 320px) / 1600));
+    }
+
+    .hero-flex__text h2 {
+        font-size: calc(16px + (16 + 16 * 0.7) * ((100vw - 320px) / 1600));
+    }
+
+    .hero-flex__text p {
+        font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1600));
+    }
+}
+
+@media (max-width: 319.98px) {
+    .hero-flex__text {
+        flex: 0 1 auto;
+    }
+}
