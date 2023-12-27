@@ -2,7 +2,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     height: 100vh;
-    background-image: url(/myProject/img/webp/hero-background4.webp);
+    background-image: url(../img/webp/hero-background4.webp);
     background-size: cover;
 }
 
