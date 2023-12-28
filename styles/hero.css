@@ -1,8 +1,7 @@
 .hero {
     padding-top: 50px;
-    padding-bottom: 50px;
     height: 100vh;
-    background-image: url(../img/webp/hero-background4.webp);
+    background-image: url(../img/webp/hero-background4.2.webp);
     background-size: cover;
 }
 
@@ -28,13 +27,14 @@
 }
 
 .hero-flex__text h2 {
-    text-align: center;
+    text-align: left;
+    width: 320px;
     color: #113377;
     font-size: calc(16px + 16 * (100vw / 1600));
 }
 
 .hero-flex__text p {
-    text-align: center;
+    text-align: left;
     color: #223355;
     font-size: calc(12px + 4 * (100vw / 1600));
 }
@@ -61,6 +61,12 @@
         font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1600));
     }
 }
+@media (max-width: 576px){
+    .hero{background-image: url(../img/webp/hero-background4.2-768px.webp);
+    }
+    
+}
+
 
 @media (max-width: 319.98px) {
     .hero-flex__text {

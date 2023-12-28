@@ -1,0 +1,36 @@
+.landing {
+    background-color: #c7d5f3ce;
+    padding: 100px 0 100px 0;
+}
+
+
+.flex-landing__title {
+    font-size: var(--fs-title-h2);
+    text-align: center;
+}
+
+.flex-landing__text {
+    font-size: var(--fs-text);
+}
+
+.landing__img {
+    width: 100%;
+    box-shadow: 10px 12px 5px rgba(173, 169, 169, 0.406)
+}
+
+.landing__title--h3 {
+    font-size: var(--fs-title-h3);
+}
+
+.list__title {
+    font-weight: 700;
+    
+}
+.landing-list li{
+    
+    list-style: circle inside;
+}
+
+.landing-list__item {
+    padding-bottom: 30px;
+}
