@@ -27,7 +27,7 @@
     
 }
 .landing-list li{
-    
+    font-size: var(--fs-text);
     list-style: circle inside;
 }
 

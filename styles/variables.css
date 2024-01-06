@@ -1,7 +1,9 @@
 :root {
     --bg-main: #fff;
     --bg-color-grey: #828282;
+    --bg-color-greyFooter: #E0E0E0;
     --bg-color-black: #000000;
+    --footer-f-color: #999;
     --fs-title-h2: calc(16px + 16 * (100vw / 1600));
     --fs-title-h3: calc(14px + 16 * (100vw / 1600));
     --fs-text: calc(12px + 4 * (100vw / 1600));
