@@ -1,6 +1,6 @@
 .landing {
     background-color: #c7d5f3ce;
-    padding: 100px 0 100px 0;
+    padding: 50px 0 50px 0;
 }
 
 
@@ -24,13 +24,26 @@
 
 .list__title {
     font-weight: 700;
-    
+
 }
-.landing-list li{
+
+.landing-list li {
     font-size: var(--fs-text);
     list-style: circle inside;
 }
 
 .landing-list__item {
     padding-bottom: 30px;
+}
+
+@media (max-width: 920px) {
+    .wrapper {
+        padding: 0 20px 0 20px;
+
+    }
+
+    .landing {
+
+        padding: 20px 0 10px 0;
+    }
 }
