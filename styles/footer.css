@@ -23,6 +23,8 @@ footer {
 
 .footer-flex__item ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .footer-flex__item li{
     line-height: 1.8;
